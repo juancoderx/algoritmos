@@ -20,8 +20,12 @@ func main() {
 	fmt.Println("Algoritmo por Cuentas")
 	fmt.Println(countSort(numeros3))
 
+	fmt.Println()
+
 	numero4 := []int{10, 100, 1000, 20, 200, 2000}
 	fmt.Println("Busqueda secuencial, encontrara la posicion del 200:", BusquedaSecuencial(numero4, 200))
+
+	fmt.Println()
 
 	nums := []int{100, 200, 300, 400, 800}
 	fmt.Println("Busqueda Binaria")
