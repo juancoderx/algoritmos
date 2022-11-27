@@ -1,14 +1,14 @@
 package main
 
-func sortManual(paises []int) []int {
-	for i := 0; i < len(paises); i++ {
-		for i > 0 && paises[i-1] > paises[i] {
-			copia := paises[i]
-			paises[i] = paises[i-1]
-			paises[i-1] = copia
+func bubbleSort(listaNumeros []int) []int {
+	for i := 0; i < len(listaNumeros); i++ {
+		for i > 0 && listaNumeros[i-1] > listaNumeros[i] {
+			copia := listaNumeros[i]
+			listaNumeros[i] = listaNumeros[i-1]
+			listaNumeros[i-1] = copia
 
 			i--
 		}
 	}
-	return paises
+	return listaNumeros
 }
