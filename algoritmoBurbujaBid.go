@@ -1,26 +1,26 @@
 package main
 
-func cocktailSort(list []int) {
-	last := len(list) - 1
+func cocktailSort(lista []int) {
+	listaAnterior := len(lista) - 1
 	for {
-		swapped := false
-		for i := 0; i < last; i++ {
-			if list[i] > list[i+1] {
-				list[i], list[i+1] = list[i+1], list[i]
-				swapped = true
+		cambio := false
+		for i := 0; i < listaAnterior; i++ {
+			if lista[i] > lista[i+1] {
+				lista[i], lista[i+1] = lista[i+1], lista[i]
+				cambio = true
 			}
 		}
-		if !swapped {
+		if !cambio {
 			return
 		}
-		swapped = false
-		for i := last - 1; i >= 0; i-- {
-			if list[i] > list[i+1] {
-				list[i], list[i+1] = list[i+1], list[i]
-				swapped = true
+		cambio = false
+		for i := listaAnterior - 1; i >= 0; i-- {
+			if lista[i] > lista[i+1] {
+				lista[i], lista[i+1] = lista[i+1], lista[i]
+				cambio = true
 			}
 		}
-		if !swapped {
+		if !cambio {
 			return
 		}
 	}
