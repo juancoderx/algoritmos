@@ -10,7 +10,8 @@ func main() {
 	fmt.Println(" Antes:")
 	fmt.Println("  ", numeros)
 	fmt.Println(" Despues:")
-	fmt.Println("  ", insertionSort(numeros))
+	insertionSort(numeros)
+	fmt.Println("  ", numeros)
 	fmt.Println()
 
 	// ---
@@ -22,7 +23,8 @@ func main() {
 	fmt.Println(" Antes:")
 	fmt.Println("  ", numeros1)
 	fmt.Println(" Despues:")
-	fmt.Println("  ", bubbleSort(numeros1))
+	bubbleSort(numeros1)
+	fmt.Println("  ", numeros1)
 	fmt.Println()
 
 	// ---
@@ -47,6 +49,7 @@ func main() {
 	fmt.Println(" Antes:")
 	fmt.Println("  ", numeros3)
 	fmt.Println(" Despues:")
+
 	fmt.Println("  ", countSort(numeros3))
 	fmt.Println()
 
@@ -57,19 +60,19 @@ func main() {
 	numeros4 := []int{10, 100, 1000, 20, 200, 2000}
 
 	fmt.Println(" Datos:", numeros4)
-	fmt.Println(" 200 - Indice:", BusquedaSecuencial(numeros4, 200))
+	fmt.Println(" 200 - Indice:", busquedaSecuencial(numeros4, 200))
 	fmt.Println()
 
 	// ---
 
 	fmt.Println("Busqueda Binaria:")
 
-	numero5 := []int{100, 200, 300, 400, 800}
+	numeros5 := []int{100, 200, 300, 400, 800}
 
-	fmt.Println(" Datos:", numero5)
-	fmt.Println(" 100 - Indice:", BusquedaBinaria(numero5, 100, 0))
-	fmt.Println(" 200 - Indice:", BusquedaBinaria(numero5, 200, 0))
-	fmt.Println(" 300 - Indice:", BusquedaBinaria(numero5, 300, 0))
-	fmt.Println(" 400 - Indice:", BusquedaBinaria(numero5, 400, 0))
-	fmt.Println(" 500 - Indice:", BusquedaBinaria(numero5, 500, 0))
+	fmt.Println(" Datos:", numeros5)
+	fmt.Println(" 100 - Indice:", busquedaBinaria(numeros5, 100, 0))
+	fmt.Println(" 200 - Indice:", busquedaBinaria(numeros5, 200, 0))
+	fmt.Println(" 300 - Indice:", busquedaBinaria(numeros5, 300, 0))
+	fmt.Println(" 400 - Indice:", busquedaBinaria(numeros5, 400, 0))
+	fmt.Println(" 500 - Indice:", busquedaBinaria(numeros5, 500, 0))
 }

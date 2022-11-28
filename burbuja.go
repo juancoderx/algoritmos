@@ -1,6 +1,6 @@
 package main
 
-func bubbleSort(listaNumeros []int) []int {
+func bubbleSort(listaNumeros []int) {
 	for i := 0; i < len(listaNumeros); i++ {
 		for i > 0 && listaNumeros[i-1] > listaNumeros[i] {
 			copia := listaNumeros[i]
@@ -10,5 +10,4 @@ func bubbleSort(listaNumeros []int) []int {
 			i--
 		}
 	}
-	return listaNumeros
 }
