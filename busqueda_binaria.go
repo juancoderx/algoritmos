@@ -4,8 +4,8 @@ import (
 	"math"
 )
 
-func busquedaBinaria(lista []int, item, pos int) int {
-	if len(lista) <= 0 {
+func busquedaBinaria(lista []int, item int) int {
+	if len(lista) == 0 {
 		return -1
 	}
 
@@ -13,13 +13,12 @@ func busquedaBinaria(lista []int, item, pos int) int {
 
 	switch {
 	case lista[puntoMedio] == item:
-		return pos + puntoMedio
+		return puntoMedio
 
 	case lista[puntoMedio] < item:
-		return busquedaBinaria(lista[puntoMedio+1:], item, pos+puntoMedio+1)
+		return busquedaBinaria(lista[puntoMedio+1:], item)
 
 	default:
-		return busquedaBinaria(lista[:puntoMedio], item, pos)
-
+		return busquedaBinaria(lista[:puntoMedio], item)
 	}
 }
