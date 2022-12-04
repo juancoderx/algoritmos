@@ -70,9 +70,9 @@ func main() {
 	numeros5 := []int{100, 200, 300, 400, 700}
 
 	fmt.Println(" Datos:", numeros5)
-	fmt.Println(" 100 - Indice:", busquedaBinaria(numeros5, 100))
-	fmt.Println(" 200 - Indice:", busquedaBinaria(numeros5, 200))
-	fmt.Println(" 300 - Indice:", busquedaBinaria(numeros5, 300))
-	fmt.Println(" 400 - Indice:", busquedaBinaria(numeros5, 400))
-	fmt.Println(" 500 - Indice:", busquedaBinaria(numeros5, 500))
+	fmt.Println(" 100 - Indice:", busquedaBinaria(numeros5, 100, 0))
+	fmt.Println(" 200 - Indice:", busquedaBinaria(numeros5, 200, 0))
+	fmt.Println(" 300 - Indice:", busquedaBinaria(numeros5, 300, 0))
+	fmt.Println(" 400 - Indice:", busquedaBinaria(numeros5, 400, 0))
+	fmt.Println(" 500 - Indice:", busquedaBinaria(numeros5, 500, 0))
 }
