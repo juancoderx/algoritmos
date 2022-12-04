@@ -61,7 +61,6 @@ func main() {
 
 	fmt.Println(" Datos:", numeros4)
 	fmt.Println(" 200 - Indice:", busquedaSecuencial(numeros4, 200))
-	fmt.Println()
 
 	// ---
 
@@ -75,4 +74,17 @@ func main() {
 	fmt.Println(" 300 - Indice:", busquedaBinaria(numeros5, 300, 0))
 	fmt.Println(" 400 - Indice:", busquedaBinaria(numeros5, 400, 0))
 	fmt.Println(" 500 - Indice:", busquedaBinaria(numeros5, 500, 0))
+	fmt.Println()
+
+	// ---
+
+	fmt.Println("Busqueda Binaria Sin Recursion:")
+
+	numeros6 := []int{1000, 2000, 3000, 4000, 5000}
+
+	fmt.Println(" 1000 - Indice:", busquedaBinariaSinRecursion(numeros6, 1000))
+	fmt.Println(" 2000 - Indice:", busquedaBinariaSinRecursion(numeros6, 2000))
+	fmt.Println(" 3000 - Indice:", busquedaBinariaSinRecursion(numeros6, 3000))
+	fmt.Println(" 4000 - Indice:", busquedaBinariaSinRecursion(numeros6, 4000))
+	fmt.Println(" 5000 - Indice:", busquedaBinariaSinRecursion(numeros6, 7000))
 }
