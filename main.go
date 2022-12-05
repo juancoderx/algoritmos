@@ -88,4 +88,16 @@ func main() {
 	fmt.Println(" 3000 - Indice:", busquedaBinariaSinRecursion(numeros6, 3000))
 	fmt.Println(" 4000 - Indice:", busquedaBinariaSinRecursion(numeros6, 4000))
 	fmt.Println(" 5000 - Indice:", busquedaBinariaSinRecursion(numeros6, 7000))
+	fmt.Println()
+
+	// ---
+
+	fmt.Println("Ordenamiento Rapido(QuickSort)")
+	ListaDesordenada := []int{15, 3, 8, 6, 18, 1}
+
+	var N int = len(ListaDesordenada)
+
+	ListaOrdenada := quicksort(ListaDesordenada, 0, N-1)
+
+	fmt.Println(ListaOrdenada)
 }

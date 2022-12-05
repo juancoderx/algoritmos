@@ -1,6 +1,8 @@
 package main
 
-import "math"
+import (
+	"math"
+)
 
 func busquedaBinariaSinRecursion(arreglo []int, busqueda int) (indice int) {
 	izquierda := 0
