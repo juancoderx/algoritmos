@@ -4,6 +4,8 @@ import (
 	"testing"
 )
 
+// Se ejecutan con: go test -bench=.
+
 func BenchmarkBusquedaBinaria_DebajoDeLaMitad(b *testing.B) {
 	cantidad := 10_000_000
 
