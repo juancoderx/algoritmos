@@ -82,6 +82,7 @@ func main() {
 
 	numeros6 := []int{1000, 2000, 3000, 4000, 5000}
 
+	fmt.Println(" Datos:", numeros6)
 	fmt.Println(" 1000 - Indice:", busquedaBinariaSinRecursion(numeros6, 1000))
 	fmt.Println(" 2000 - Indice:", busquedaBinariaSinRecursion(numeros6, 2000))
 	fmt.Println(" 3000 - Indice:", busquedaBinariaSinRecursion(numeros6, 3000))
