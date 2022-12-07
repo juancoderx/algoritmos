@@ -5,8 +5,6 @@ func quicksort(listadesordenada []int, izq int, der int) {
 	i := izq
 	j := der
 
-	var aux int
-
 	for i < j {
 		for listadesordenada[i] <= pivote && i < j {
 			i++
@@ -15,6 +13,8 @@ func quicksort(listadesordenada []int, izq int, der int) {
 		for listadesordenada[j] > pivote {
 			j--
 		}
+
+		var aux int
 
 		if i < j {
 			aux = listadesordenada[i]
