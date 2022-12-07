@@ -93,11 +93,11 @@ func main() {
 	// ---
 
 	fmt.Println("Ordenamiento Rapido(QuickSort)")
-	ListaDesordenada := []int{15, 3, 8, 6, 18, 1}
 
-	var N int = len(ListaDesordenada)
+	listadesordenada := []int{15, 3, 8, 6, 18, 1}
 
-	ListaOrdenada := quicksort(ListaDesordenada, 0, N-1)
+	var n int = len(listadesordenada)
 
-	fmt.Println(ListaOrdenada)
+	quicksort(listadesordenada, 0, n-1)
+	fmt.Println(listadesordenada)
 }

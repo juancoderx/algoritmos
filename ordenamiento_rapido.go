@@ -1,7 +1,7 @@
 package main
 
-func quicksort(ListaDesordenada []int, izq int, der int) []int {
-	pivote := ListaDesordenada[izq]
+func quicksort(listadesordenada []int, izq int, der int) {
+	pivote := listadesordenada[izq]
 	// tomamos primer elemento como pivote
 	i := izq // i realiza la búsqueda de izquierda a derecha
 	j := der
@@ -9,30 +9,30 @@ func quicksort(ListaDesordenada []int, izq int, der int) []int {
 	var aux int
 
 	for i < j { // mientras no se crucen las búsquedas
-		for ListaDesordenada[i] <= pivote && i < j {
+		for listadesordenada[i] <= pivote && i < j {
 			i++
 		}
 		// busca elemento mayor que pivote
-		for ListaDesordenada[j] > pivote {
+		for listadesordenada[j] > pivote {
 			j--
 		}
 		// busca elemento menor que pivote
 		if i < j { // si no se han cruzado
-			aux = ListaDesordenada[i] // los intercambia
-			ListaDesordenada[i] = ListaDesordenada[j]
-			ListaDesordenada[j] = aux
+			aux = listadesordenada[i] // los intercambia
+			listadesordenada[i] = listadesordenada[j]
+			listadesordenada[j] = aux
 		}
 	}
-	ListaDesordenada[izq] = ListaDesordenada[j] // se coloca el pivote en su lugar de forma que tendremos
-	ListaDesordenada[j] = pivote
+
+	listadesordenada[izq] = listadesordenada[j] // se coloca el pivote en su lugar de forma que tendremos
+	listadesordenada[j] = pivote
+
 	// los menores a su izquierda y los mayores a su derecha
 	if izq < j-1 {
-		quicksort(ListaDesordenada, izq, j-1) // ordenamos subarray izquierdo
+		quicksort(listadesordenada, izq, j-1) // ordenamos subarray izquierdo
 	}
 
 	if j+1 < der {
-		quicksort(ListaDesordenada, j+1, der) // ordenamos subarray derecho
+		quicksort(listadesordenada, j+1, der) // ordenamos subarray derecho
 	}
-
-	return ListaDesordenada
 }
