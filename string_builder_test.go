@@ -58,3 +58,13 @@ func BenchmarkStringBuilder_MakeWithLenAndCap(*testing.B) {
 
 	_ = data
 }
+
+func BenchmarkStringBuilder_Array(*testing.B) {
+	var data [cantidadPrueba]rune
+
+	for i := 0; i < cantidadPrueba; i++ {
+		data[i] = rune(i)
+	}
+
+	_ = data
+}
