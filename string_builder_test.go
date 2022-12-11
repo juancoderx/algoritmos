@@ -7,7 +7,7 @@ import (
 
 // go test -benchmem -bench=StringBuilder
 
-const cantidadPrueba = 100_00
+const cantidadPrueba = 10_000
 
 func BenchmarkStringBuilder_String(*testing.B) {
 	var data string
