@@ -7,7 +7,7 @@ import (
 // Se ejecutan con: go test -bench=.
 
 func BenchmarkBusquedaBinaria_DebajoDeLaMitad(b *testing.B) {
-	cantidad := 10_000_000
+	const cantidad = 10_000_000
 
 	data := make([]int, cantidad)
 
@@ -23,7 +23,7 @@ func BenchmarkBusquedaBinaria_DebajoDeLaMitad(b *testing.B) {
 }
 
 func BenchmarkBusquedaBinariaSinRecursion_DebajoDeLaMitad(b *testing.B) {
-	cantidad := 10_000_000
+	const cantidad = 10_000_000
 
 	data := make([]int, cantidad)
 
@@ -39,7 +39,7 @@ func BenchmarkBusquedaBinariaSinRecursion_DebajoDeLaMitad(b *testing.B) {
 }
 
 func BenchmarkBusquedaBinaria_ArribaDeLaMitad(b *testing.B) {
-	cantidad := 10_000_000
+	const cantidad = 10_000_000
 
 	data := make([]int, cantidad)
 
@@ -55,7 +55,7 @@ func BenchmarkBusquedaBinaria_ArribaDeLaMitad(b *testing.B) {
 }
 
 func BenchmarkBusquedaBinariaSinRecursion_ArribaDeLaMitad(b *testing.B) {
-	cantidad := 10_000_000
+	const cantidad = 10_000_000
 
 	data := make([]int, cantidad)
 
