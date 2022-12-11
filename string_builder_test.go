@@ -5,6 +5,8 @@ import (
 	"testing"
 )
 
+// go test -benchmem -bench=StringBuilder
+
 const cantidadPrueba = 100_00
 
 func BenchmarkStringBuilder_String(*testing.B) {
